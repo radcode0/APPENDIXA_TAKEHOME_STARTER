@@ -1,0 +1,41 @@
+# ------------------------------------------------------------------
+# Agentic Pipeline – configuration
+# ------------------------------------------------------------------
+DEBUG: 0                         # 1 = True (verbose and output LLM reponse), 0 = False
+extract_model_name: "qwen2.5vl:7b"
+estimate_model_cost_1k: 0.003
+brief_model_names:  "deepseek-r1:14b,qwen3:14b,gpt-oss:20b"
+embeddings_model_name:  "mxbai-embed-large"  
+temperature: 0.1
+max_tokens: 4096
+work_folder: "work"
+data_folder: "data"              # assuming execution context is project root, not agent folder
+gold_folder: "gold"              # assuming execution context is project root, not agent folder
+output_folder: "outputs"         # assuming execution context is project root, not agent folder
+
+# Prompt templates (simple placeholders)
+extraction_prompt: |
+  You are key phrase and entity extraction assistant.
+  Return only JSON string with keys "client_name", "goals", "deliverables"
+  From the following text extract these entities: Client Name, Project Goals, Key Deliverables.
+  If missing entity, leave it empty.
+  example response content format:{"client_name":"Gym co.","goals":["Open new healthy gym", "Provide best class equipement"],"deliverables":["establish location","acquire permit","purchase equipment","advertise"]}
+
+brief_prompt: |
+  You are project-management assistant.  
+  From included JSON index, produce executive project brief including these keys:  
+  summary, modules, config_yaml, risks, next_steps.
+  If a section cannot be inferred, leave it empty.
+  Return only JSON brief  
+
+# Evaluation threshold
+similarity_threshold: 0.75
+
+# Logging / metrics
+metrics_file: "metrics.json"
+brief_file:  "{client_name}_brief.json"
+index_file:  "{client_name}_index.json"
+
+# ------------------------------------------------------------------
+# End of config
+# ------------------------------------------------------------------

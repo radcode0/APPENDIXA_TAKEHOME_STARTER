@@ -1,0 +1,4 @@
+Configuration Working Session – Orders & Meds
+- eMAR needs barcoding enabled
+- Training owners identified for Nursing and Pharmacy teams
+- YAML config to include MAR start time at 06:00 and 18:00

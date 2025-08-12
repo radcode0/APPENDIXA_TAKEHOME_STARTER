@@ -1,0 +1,4 @@
+Data Migration Sync
+- Admissions import requires CSV template finalization
+- Billing will remain read-only during migration window
+- Next steps: finalize mapping sheet and dry run schedule

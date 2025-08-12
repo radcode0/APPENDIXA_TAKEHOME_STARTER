@@ -1,0 +1,19 @@
+{
+  "account_name": "Customer X",
+  "salesforce_id": "001XXX0000001ABC",
+  "modules_purchased": [
+    "Admissions",
+    "eMAR",
+    "Billing"
+  ],
+  "primary_contacts": [
+    {
+      "name": "Pat Jordan",
+      "role": "Sponsor"
+    },
+    {
+      "name": "Lee Morgan",
+      "role": "Project Manager"
+    }
+  ]
+}

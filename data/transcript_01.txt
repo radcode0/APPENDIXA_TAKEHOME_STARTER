@@ -1,0 +1,9 @@
+Implementation Kickoff – Customer X
+Attendees: Project Lead, Solutions Consultant, Billing SME
+Discussion:
+- Modules targeted in phase one: Admissions, eMAR, Billing
+- Timeline: pilot in four weeks, go-live in eight weeks
+- Risks: integration latency from legacy system; limited test data
+Actions:
+- Confirm pharmacy partner mapping
+- Provide sample orders for eMAR validation

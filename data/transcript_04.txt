@@ -1,0 +1,4 @@
+Steering Committee
+- Confirmed scope: Admissions, eMAR, Billing
+- Open risk: dependency on third-party SSO
+- Decision: keep timelines; add weekly checkpoint

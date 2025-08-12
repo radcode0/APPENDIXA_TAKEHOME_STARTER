@@ -1,0 +1,10 @@
+account: "Customer X"
+modules:
+  - "Admissions"
+  - "eMAR"
+  - "Billing"
+constraints:
+  - "Maintain read-only Billing during migration"
+  - "Enable barcode scanning in eMAR"
+defaults:
+  mar_times: ["06:00", "18:00"]
